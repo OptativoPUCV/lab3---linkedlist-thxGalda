@@ -395,3 +395,18 @@ list.c:116:1: error: control reaches end of non-void function [-Werror=return-ty
 cc1: all warnings being treated as errors
 Compilation failed
 fa64566
+Fri 29 Mar 2024 09:22:09 PM UTC: 
+ list.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:117:15: error: ‘Node’ has no member named ‘dato’; did you mean ‘data’?
+  117 |   return aux->dato;
+      |               ^~~~
+      |               data
+list.c:118:1: error: control reaches end of non-void function [-Werror=return-type]
+  118 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+049a833
