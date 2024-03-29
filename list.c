@@ -111,11 +111,11 @@ void * popCurrent(List * list) {
   auxD->prev = auxI;
   free(list->current);
   list->current = NULL;
-  return;
 }
 
 void cleanList(List * list) {
     while (list->head != NULL) {
         popFront(list);
     }
+  return;
 }
