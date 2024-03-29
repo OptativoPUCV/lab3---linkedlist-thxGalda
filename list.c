@@ -109,12 +109,11 @@ void * popCurrent(List * list) {
   if(list->current == NULL) return NULL;
   Node* auxI = list->current->prev;
   Node* auxD = list->current->next;
-  Node* aux = list->current;
   auxI->next = auxD;
   auxD->prev = auxI;
   free(list->current);
-  list->current = NULL;
-  return aux->data;
+  list->current = auxD;
+  return auxD->data;
 }
 
 void cleanList(List * list) {
