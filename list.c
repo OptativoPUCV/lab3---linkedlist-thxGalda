@@ -51,7 +51,7 @@ void * nextList(List * list) {
     aux = aux->next;
   }
   list->current = aux->next;
-  return list->current->data;
+  return aux->next->data;
 }
 
 void * lastList(List * list) {
