@@ -147,3 +147,14 @@ Fri 29 Mar 2024 08:14:16 PM UTC:
  tests:  9|3
 total_score: 35/70
 eb950b3
+Fri 29 Mar 2024 08:14:45 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:45:1: error: control reaches end of non-void function [-Werror=return-type]
+   45 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+3a57384
