@@ -50,7 +50,7 @@ void * nextList(List * list) {
   while(aux != list->current){
     aux = aux->next;
   }
-  list->current = aux;
+  list->current->next = aux;
   return aux->next->data;
 }
 
