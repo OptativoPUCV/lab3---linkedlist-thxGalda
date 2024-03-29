@@ -113,7 +113,7 @@ void * popCurrent(List * list)
   auxD->prev = auxI;
   free(list->current);
   list->current = NULL;
-  return list->current;
+  //return list->current;
 }
 
 void cleanList(List * list) {
