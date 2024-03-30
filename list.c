@@ -107,14 +107,22 @@ void * popBack(List * list) {
 
 void * popCurrent(List * list) {
   if(list->current == NULL) return NULL;
+  Node* izq = list->current->prev;
+  Node* der = list->current->next;
   if(list->current->next == NULL) 
   {
-    list->current->prev->next = NULL;
     list->tail = list->current->prev;
+    list->tail->next = NULL;
     return list->current->data;
   }
-  list->current->prev->next = list->current->next;
-  list->current->next->prev = list->current->prev;
+  if(list->current->prev == NULL)
+  {
+    list->head = list->current->next;
+    list->head->prev = NULL;
+    return list->current->data;
+  }
+  izq->next = der;
+  der->prev = izq;
   return list->current->data;
 }
 

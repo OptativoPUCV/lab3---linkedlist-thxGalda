@@ -468,3 +468,9 @@ Sat 30 Mar 2024 02:19:43 AM UTC:
  1 file changed, 8 insertions(+), 7 deletions(-)
  tests:  0|0
 c0960ed
+Sat 30 Mar 2024 02:21:27 AM UTC: 
+ list.c | 14 +++++++++++---
+ 1 file changed, 11 insertions(+), 3 deletions(-)
+ tests:  12|0
+total_score: 70/70
+7c28eba
