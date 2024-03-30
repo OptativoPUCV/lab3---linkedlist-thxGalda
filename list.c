@@ -123,7 +123,6 @@ void * popCurrent(List * list) {
   }
   izq->next = der;
   der->prev = izq;
-  free(list->current);
   return list->current->data;
 }
 
